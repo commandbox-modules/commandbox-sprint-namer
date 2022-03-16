@@ -32,7 +32,7 @@ component {
 		command( "tokenReplace" )
 			.params(
 				path        = "/#variables.cwd#/**",
-				token       = "@MODULE_NAME@",
+				token       = "CommandBox Sprint Namer",
 				replacement = moduleName
 			)
 			.run();
@@ -40,7 +40,7 @@ component {
 		command( "tokenReplace" )
 			.params(
 				path        = "/#variables.cwd#/**",
-				token       = "@MODULE_SLUG@",
+				token       = "commandbox-sprint-namer",
 				replacement = moduleSlug
 			)
 			.run();
@@ -48,7 +48,7 @@ component {
 		command( "tokenReplace" )
 			.params(
 				path        = "/#variables.cwd#/**",
-				token       = "@MODULE_DESCRIPTION@",
+				token       = "A handy command to generate sprint names",
 				replacement = moduleDescription
 			)
 			.run();
