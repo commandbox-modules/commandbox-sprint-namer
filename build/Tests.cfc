@@ -8,6 +8,6 @@ component{
 	 * Run my test suites
 	 */
 	function run(){
-		command( "hello ?" ).run();
+		command( "sprint-namer go" ).run();
 	}
 }

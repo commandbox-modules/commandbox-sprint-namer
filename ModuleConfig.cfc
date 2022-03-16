@@ -6,8 +6,8 @@
  */
 component {
 
-	this.cfmapping      = "@module_slug@";
-	this.modelNamespace = "@module_slug@";
+	this.cfmapping      = "sprint-namer";
+	this.modelNamespace = "sprint-namer";
 
 	function configure(){
 		settings = {}

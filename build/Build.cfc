@@ -37,7 +37,7 @@ component {
 		} );
 
 		// Create Project Dependency Mappings
-		fileSystemUtil.createMapping( "@module_name@", variables.cwd );
+		fileSystemUtil.createMapping( "CommandBox Sprint Namer", variables.cwd );
 
 		return this;
 	}
@@ -94,24 +94,8 @@ component {
 
 		var sTime = getTickCount();
 
-		variables.print
-			.line()
-			.boldMagentaLine( "Linking your module..." )
-			.toConsole();
-		command( "link --force" ).run();
-
-		// Tests First, if they fail then exit
-		try {
-			// Run your tests via the `command()` options here.
-			command( "task run build/Tests.cfc" ).run();
-		} finally {
-			// Unlink your module
-			variables.print
-				.line()
-				.boldMagentaLine( "Unlinking your module..." )
-				.toConsole();
-			command( "unlink" ).run();
-		}
+		// Run your tests via the `command()` options here.
+		command( "task run build/Tests.cfc" ).run();
 
 		// Check Exit Code?
 		if ( shell.getExitCode() ) {
@@ -236,7 +220,7 @@ component {
 			.params(
 				"source"                = "commands",
 				"excludes"              = "",
-				"mapping"               = "@module_name@",
+				"mapping"               = "CommandBox Sprint Namer",
 				"strategy-projectTitle" = "#arguments.projectName# v#arguments.version#",
 				"strategy-outputDir"    = arguments.outputDir
 			)
