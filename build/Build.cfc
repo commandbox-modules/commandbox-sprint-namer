@@ -91,6 +91,7 @@ component {
 			.boldGreenLine( "------------------------------------------------" )
 			.boldGreenLine( "Starting to execute your tests..." )
 			.boldGreenLine( "------------------------------------------------" )
+			.toConsole();
 
 		var sTime = getTickCount();
 
@@ -102,7 +103,6 @@ component {
 			return error( "X Cannot continue building, tests failed!" );
 		} else {
 			variables.print
-				.line()
 				.boldGreenLine( "------------------------------------------------" )
 				.boldGreenLine( "All tests passed in #getTickCount() - sTime#ms! Ready to go, great job!" )
 				.boldGreenLine( "------------------------------------------------" )
