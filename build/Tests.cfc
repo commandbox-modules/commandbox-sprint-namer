@@ -8,6 +8,11 @@ component{
 	 * Run my test suites
 	 */
 	function run(){
-		command( "sprint-namer go" ).run();
+		var name = command( "sprint-namer go" ).run( returnOutput : true );
+		if( listLen( name, " " ) != 2 ){
+			throw( type : "AssertException", message = "The name returned (#arguments.name#) is not composed of 2 words" );
+		} else {
+			print.greenLine( "√ Name produced: #name#" )
+		}
 	}
 }
