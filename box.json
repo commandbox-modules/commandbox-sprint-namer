@@ -1,6 +1,6 @@
 {
     "name":"CommandBox Sprint Namer",
-    "version":"1.1.0",
+    "version":"1.2.0",
     "location":"https://downloads.ortussolutions.com/ortussolutions/commandbox-modules/commandbox-sprint-namer/@build.version@/commandbox-sprint-namer-@build.version@.zip",
     "slug":"commandbox-sprint-namer",
     "author":"Ortus Solutions, Corp",
